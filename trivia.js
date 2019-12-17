@@ -12,7 +12,7 @@ let questions = [];
 
 fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=boolean")
     .then(res => {
-      return res.json();
+      return "https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=boolean" ();
     })
     .then(loadedQuestions => {
       console.log(loadedQuestions.results);
@@ -104,4 +104,3 @@ fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=bo
     scoreText.innerText = score;
   };
 
-  
